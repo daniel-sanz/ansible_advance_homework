@@ -64,7 +64,8 @@
 - name: Show public IP
   debug: 
 #    verbosity: 2
-    msg: "Floating IP is {{ item.item }}"
+#    msg: "Floating IP is {{ item.item }}"
+    msg: "Floating IP is {{ item.floating_ip.floating_ip_address }}"
   loop: "{{ r_floating_ips.results }}"
 
 - name: Wait for server to be available
