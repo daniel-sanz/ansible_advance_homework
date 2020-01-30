@@ -63,7 +63,7 @@
 
 - name: Show public IP
   debug: 
-    verbosity: 2
+#    verbosity: 2
     msg: "Floating IP is {{ item.item }}"
   loop: "{{ r_floating_ips.results }}"
 
