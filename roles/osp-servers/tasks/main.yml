@@ -36,10 +36,10 @@
   retries: 900
   loop: "{{ r_instances.results }}"
 
-- name: Debug instances 
-  debug:
-    msg: "Server is {{ item.item.instance_name }}"
-  loop: "{{ r_instances.results }}"
+#- name: Debug instances 
+#  debug:
+#    msg: "Server is {{ item.item.instance_name }}"
+#  loop: "{{ r_instances.results }}"
 
 - name: Add floating IP to Servers
   os_floating_ip:
