@@ -65,7 +65,7 @@
 
 - name: Wait for server to be available
   wait_for:
-    host: "{{ item.item.openstack.public_v4 }}"
+    host: "{{ item.floating_ip.floating_ip_address }}"
     port: 22
     search_regex: OpenSSH
     timeout: 600
