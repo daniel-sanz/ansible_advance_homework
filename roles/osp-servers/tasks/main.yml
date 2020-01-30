@@ -25,6 +25,8 @@
     - "{{ osp_servers.app1 }}"
     - "{{ osp_servers.app2 }}"
     - "{{ osp_servers.db }}"     
+  async: 900
+  poll: 0
   register: r_instances
 
 - name: Wait for OSP instance creation to complete
