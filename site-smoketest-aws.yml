@@ -10,8 +10,8 @@
       - "{{ inventory_hostname }}"
     register: webpage
 
-  - debug:
-      var: webpage.content
+  #- debug:
+  #    var: webpage.content
 
   - name: Fail if 'Ansible has done its job' is not in the page content
     fail:
