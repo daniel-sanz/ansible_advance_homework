@@ -11,7 +11,7 @@
     register: webpage
 
   - debug:
-    var: webpage
+      var: webpage
 
   - name: Fail if 'Ansible has done its job' is not in the page content
     fail:
