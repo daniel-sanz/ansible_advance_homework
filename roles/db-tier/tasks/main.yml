@@ -1,6 +1,6 @@
 ---
 # tasks file for db-tier
----
+
 # Variable configuration.
 - include: variables.yml
   static: no
