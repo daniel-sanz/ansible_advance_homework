@@ -15,7 +15,10 @@
       return_content: yes
     register: webpage
     tags:
-      - osp.smoke    
+      - osp.smoke
+
+  - debug:
+      var: webpage
   
   - name: Fail if 'Ansible has done its job' is not in the page content
     fail:
