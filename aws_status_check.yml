@@ -1,4 +1,5 @@
-- hosts: tag_instance_filter_three_tier_app_psrivast_redhat_com
+#tag instance updated
+- hosts: tag_instance_filter_three_tier_app_daniel_sanz_pena_accenture_com
   gather_facts: false
   tasks:
   - name: Check the instances status
